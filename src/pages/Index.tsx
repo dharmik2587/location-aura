@@ -5,7 +5,7 @@ import ScorePanel from '@/components/ScorePanel';
 import LayerToggle from '@/components/LayerToggle';
 import UseCaseSelector from '@/components/UseCaseSelector';
 import ComparisonPanel from '@/components/ComparisonPanel';
-import { type UseCase } from '@/data/syntheticData';
+import { type UseCase, geoLayers } from '@/data/syntheticData';
 import { type SiteScore } from '@/engine/scoringEngine';
 import { exportPDF, exportCSV } from '@/utils/exportReport';
 import { Layers, Eye, EyeOff, ChevronLeft, ChevronRight, Upload, Zap, BarChart3, Globe } from 'lucide-react';
