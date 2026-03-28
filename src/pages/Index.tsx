@@ -126,8 +126,8 @@ const Index = () => {
               <div className="flex items-center justify-between">
                 <span className="text-[10px] text-muted-foreground">Active points</span>
                 <span className="text-[10px] font-mono text-primary">{activeLayers.reduce((sum, id) => {
-                  const layer = require('@/data/syntheticData').geoLayers.find((l: any) => l.id === id);
-                  return sum + (layer?.points.length || 0);
+                  const found = geoLayers.find((l) => l.id === id);
+                  return sum + (found?.points.length || 0);
                 }, 0)}</span>
               </div>
             </div>
