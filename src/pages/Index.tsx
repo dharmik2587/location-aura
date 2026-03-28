@@ -46,7 +46,7 @@ const Index = () => {
     setShowComparison(true);
   }, [selectedSite]);
 
-  const totalPoints = activeLayers.length * 50; // approximate
+  
 
   return (
     <div className="h-screen w-screen flex overflow-hidden bg-background">
